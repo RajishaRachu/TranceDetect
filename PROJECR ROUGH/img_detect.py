@@ -1,5 +1,6 @@
 from PIL import Image
-import pytesseract
+import pytesseract as tess
+tess.pytesseract.tesseract_cmd = r"C:\Users\Evin Jith\AppData\Local\Programs\Tesseract-OCR\tesseract"
 import pandas as pd
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
@@ -8,7 +9,7 @@ from sklearn.naive_bayes import MultinomialNB
 li='tam+hin+eng+fra+chi_sim'
 img='chi.jpg'
 lan_li={'[\'French\']':'fra','[\'Tamil\']':'tam','[\'English\']':'eng','[\'Hindi\']':'hin','[\'Chinese\']':'chi_sim'}
-text=pytesseract.image_to_string(Image.open(img),lang=li)
+text=tess.image_to_string(Image.open(img),lang=li)
 print(text)
 data = pd.read_csv("dataset.csv")
 x = np.array(data["Text"])
@@ -25,7 +26,7 @@ print(output)
 output=str(output)
 r_output=lan_li[output]
 print(r_output)
-text=pytesseract.image_to_string(Image.open(img),lang=r_output)
+text=tess.image_to_string(Image.open(img),lang=r_output)
 print(text)
 data = pd.read_csv("dataset.csv")
 x = np.array(data["Text"])
