@@ -1,0 +1,83 @@
+body
+{
+    background-color: aqua;
+    margin: 0px;
+}
+.txt_ar_one {
+
+    margin-top:0px;
+   /* width:30rem;*/
+}
+.txt_ar_two {
+    margin-top: 10rem;
+    margin-left: 0rem;
+    
+    /*width: 25px;*/
+}
+.txt_ar_one_two_dr_panel {
+    display:flex;
+    margin-top: 5px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.txt_ar_dropdown_menu
+{
+    display: grid;
+    margin: 0px;
+    width: 38rem;
+    margin-left: 10px;
+    border: 1px solid black; 
+    border-radius: 10px 10px 10px 10px;
+}
+select  {
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+
+ }
+ textarea {
+
+    border-radius: 0px 0px 10px 10px;
+ }
+ /*nav bar css*/
+ .navbar {
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 19px;
+    margin:0px;
+ }
+ .button_grp {
+     display: flex;
+     margin-top:60px;
+     padding: 5px;
+ }
+.btn{
+    padding: 25px;
+    margin: 10px;
+    border-radius: 10px 10px 10px 10px;
+
+}
+.btn_lower  {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6e6e6e;
+}
+.btn_middle  {
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    border: 0px;
+    margin-top: 35px;
+   
+
+       
+}
+
+
+ 
+
+ 
